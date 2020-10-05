@@ -79,8 +79,7 @@
 	padding: 1rem;
 	overflow-y: scroll;
 	background-color: transparent;
-	font-size: 1.5rem;
-	line-height: 1.8rem;
+	word-wrap: break-word;
 }
 
 #editor:focus,
@@ -88,10 +87,10 @@
 	outline: none;
 }
 
-/* #editor {
+#editor, #preview {
 	font-size: 1.5rem;
 	line-height: 1.8rem;
-} */
+}
 
 .editor-block::before {
 	content: 'Editor';
