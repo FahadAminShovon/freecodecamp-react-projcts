@@ -87,10 +87,7 @@
 	outline: none;
 }
 
-#editor, #preview {
-	font-size: 1.5rem;
-	line-height: 1.8rem;
-}
+
 
 .editor-block::before {
 	content: 'Editor';
@@ -99,6 +96,16 @@
 .previewer-block::before {
 	content: 'Previewer';
 }
+
+[class^="language-"], pre{
+	display: block;
+	background-color:#fff;
+}
+
+ul {
+	padding-left: 1rem;
+}
+
 
 @media screen and (max-width: 1024px) {
 	.markdown {
