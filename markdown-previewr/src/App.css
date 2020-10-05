@@ -97,15 +97,6 @@
 	content: 'Previewer';
 }
 
-[class^="language-"], pre{
-	display: block;
-	background-color:#fff;
-}
-
-ul {
-	padding-left: 1rem;
-}
-
 
 @media screen and (max-width: 1024px) {
 	.markdown {
