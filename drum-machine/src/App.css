@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #8D8D8D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drum-machine {
+  background-color: #B3B3B3;
+  height: 30%;
+  width: 30%;
+  border: 5px solid #F8A501;
+  margin: 15px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #drum-machine {
+    height: 500px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #drum-machine {
+    height: 300px;
+    width: 100%;
+  }
+}
