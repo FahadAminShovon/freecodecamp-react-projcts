@@ -1,37 +1,94 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .App {
-  height: 100vh;
-  width: 100vw;
-  background-color: #8D8D8D;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #8D8D8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #drum-machine {
-  background-color: #B3B3B3;
-  height: 30%;
-  width: 30%;
-  border: 5px solid #F8A501;
-  margin: 15px;
+    background-color: #B3B3B3;
+    height: 30%;
+    width: 30%;
+    border: 5px solid #F8A501;
+    margin: 15px;
 }
 
+#display {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    height: calc(100% - 2rem);
+    flex: 3 0;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.drum-pad {
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 1000;
+    border-radius: 7px;
+    background-color: #808080;
+    box-shadow: black 3px 3px 5px;
+    cursor: pointer;
+    position: relative;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.drum-pad-active {
+    background-color: #F8A501;
+    box-shadow: none;
+    top: 1%;
+}
+
+.others {
+    flex: 2 0;
+}
 
 @media screen and (max-width: 1024px) {
-  #drum-machine {
-    height: 500px;
-    width: 70%;
-  }
+    #drum-machine {
+        height: 500px;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 650px) {
-  #drum-machine {
-    height: 300px;
-    width: 100%;
-  }
+    #drum-machine {
+        height: 300px;
+        width: 100%;
+    }
 }
