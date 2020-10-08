@@ -35,7 +35,9 @@ module.exports = {
 		'import/extentions': 'off',
 		'func-name': 'off',
 		'import/newline-after-import': 'warn',
-		'import/prefer-default-export': 'off'
+		'import/prefer-default-export': 'off',
+		'no-param-reassign': 'off',
+		'consistent-return': 'off'
 	},
 	settings: {
 		'import/resolver': {
